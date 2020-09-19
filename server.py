@@ -31,7 +31,7 @@ def html_page(page_name):
 
 
 def write_to_file(data):
-    with open('C:/Users/guillermo.alcazar/Dropbox/Python/Server/database.txt', mode='a') as database:
+    with open('./database.txt', mode='a') as database:
         name = data["name"]
         email = data["email"]
         message = data["message"]
@@ -39,7 +39,7 @@ def write_to_file(data):
 
 
 def write_to_csv(data):
-    with open('C:/Users/guillermo.alcazar/Dropbox/Python/Server/database.csv', newline='', mode='a') as database2:
+    with open('./database.csv', newline='', mode='a') as database2:
         name = data["name"]
         email = data["email"]
         message = data["message"]
